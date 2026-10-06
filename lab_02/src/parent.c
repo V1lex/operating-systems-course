@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
@@ -16,7 +15,7 @@ int main(void) {
     char* filename = NULL;
     size_t capacity = 0;
 
-    printf("Введите имя файла в папке data: ");
+    printf("Введите путь к файлу: ");
 
     if (fflush(stdout) == EOF) {
         perror("fflush");
@@ -29,7 +28,7 @@ int main(void) {
         if (ferror(stdin)) {
             perror("getline");
         } else {
-            fprintf(stderr, "\nОшибка: имя файла не введено.\n");
+            fprintf(stderr, "\nОшибка: путь к файлу не введен.\n");
         }
 
         free(filename);
@@ -41,22 +40,20 @@ int main(void) {
     }
 
     if (length == 0) {
-        fprintf(stderr, "Ошибка: имя файла не может быть пустым.\n");
+        fprintf(stderr, "Ошибка: путь к файлу не может быть пустым.\n");
         free(filename);
         return GENERAL_ERROR_EXIT_CODE;
     }
 
-    char filepath[4096] = "../../lab_02/data/";
-    strcat(filepath, filename);
-
-    free(filename);
-
-    int input_fd = open(filepath, O_RDONLY);
+    int input_fd = open(filename, O_RDONLY);
 
     if (input_fd == -1) {
         perror("open");
+        free(filename);
         return GENERAL_ERROR_EXIT_CODE;
     }
+
+    free(filename);
 
     int pipe_fd[2];
 
