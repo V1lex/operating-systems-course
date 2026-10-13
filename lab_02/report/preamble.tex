@@ -1,0 +1,80 @@
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{cmap}
+  \usepackage[T2A]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{tempora}
+\else
+  \usepackage{fontspec}
+  \IfFontExistsTF{Times New Roman}
+    {\setmainfont{Times New Roman}}
+    {\setmainfont{CMU Serif}}
+  \IfFontExistsTF{Consolas}
+    {\setmonofont{Consolas}[Scale=MatchLowercase]}
+    {\IfFontExistsTF{Courier New}
+      {\setmonofont{Courier New}}
+      {\setmonofont{CMU Typewriter Text}}}
+\fi
+\usepackage[english,russian]{babel}
+
+\usepackage[a4paper, margin=2.54cm]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 1pt}
+\frenchspacing
+\raggedbottom
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{0}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{4pt plus 2pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 2pt minus 2pt}{3pt plus 1pt}
+
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{caption}
+\DeclareCaptionLabelSeparator{spacedemdash}{~--- }
+\captionsetup{labelsep=spacedemdash, font=small, singlelinecheck=false, justification=raggedright}
+\captionsetup[table]{position=top, skip=4pt}
+\DeclareCaptionType[fileext=lol]{listing}[Листинг][Листинги]
+\captionsetup[listing]{position=top, skip=4pt, hypcap=false}
+\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}\renewcommand{\tablename}{Таблица}}
+\newcommand{\thead}[1]{\multicolumn{1}{|c|}{\cellcolor{gray!20}\textbf{#1}}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\usepackage{fvextra}
+\usepackage{needspace}
+\fvset{breaklines=true, breakanywhere=true,
+       frame=leftline, framerule=1.5pt, framesep=6pt,
+       rulecolor=\color{gray!60}, xleftmargin=4pt}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small}
+\DefineVerbatimEnvironment{terminal}{Verbatim}{fontsize=\footnotesize}
+\newcommand{\inputterminal}[2][]{\VerbatimInput[fontsize=\footnotesize,#1]{#2}}
+\ifPDFTeX
+  \usepackage{listingsutf8}
+  \lstset{inputencoding=utf8/cp1251, basicstyle=\fontencoding{T2A}\selectfont\ttfamily\small,
+          breaklines=true, breakatwhitespace=false, columns=fullflexible,
+          keepspaces=true, showstringspaces=false, frame=leftline,
+          framerule=1.5pt, framesep=6pt, xleftmargin=4pt,
+          rulecolor=\color{gray!60}}
+  \newcommand{\inputcode}[2][]{\lstinputlisting[#1]{#2}}
+  \newcommand{\inputappendixcode}[2][]{\lstinputlisting[basicstyle=\linespread{0.90}\fontencoding{T2A}\selectfont\ttfamily\footnotesize,#1]{#2}}
+\else
+  \newcommand{\inputcode}[2][]{\VerbatimInput[fontsize=\small,#1]{#2}}
+  \newcommand{\inputappendixcode}[2][]{\VerbatimInput[fontsize=\footnotesize,baselinestretch=0.90,#1]{#2}}
+\fi
+\newenvironment{listingblock}[1]
+  {\Needspace{8\baselineskip}\par\medskip\captionof{listing}{#1}\nopagebreak\vspace{-\topsep}\vspace{-\parskip}}
+  {\par}
+
+\newcounter{appendixno}
+\newcommand{\appendixsection}[2]{\clearpage\section{Приложение #1. #2}\stepcounter{appendixno}\setcounter{listing}{0}\renewcommand{\thelisting}{#1.\arabic{listing}}\renewcommand{\theHlisting}{app\arabic{appendixno}.\arabic{listing}}}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+
+\newcommand{\hint}[1]{\leavevmode{\color{gray}\itshape #1}}
+\newcommand{\placeholder}[2][4.5cm]{\fbox{\parbox[c][#1][c]{0.95\linewidth}{\centering\hint{#2}}}}

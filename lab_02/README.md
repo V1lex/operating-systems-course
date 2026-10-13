@@ -49,3 +49,16 @@ cd build/lab_02
 ```
 lab_02/data/
 ```
+
+## Отчёт и трассировка
+
+Исходный текст отчёта находится в `report/report.tex`. Для сборки PDF из корня
+репозитория нужен `pdflatex`:
+
+```bash
+cd lab_02/report
+make
+```
+
+Готовый файл — `report/report.pdf`. Сокращённая трассировка для раздела о `strace` хранится в `report/trace/strace_short.txt`,
+полный вывод — в `report/trace/strace.txt` и приложении Б отчёта.
