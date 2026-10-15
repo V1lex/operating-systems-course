@@ -1,0 +1,9 @@
+821490 execve("./build/lab_03/lab3_merge_sort", ["./build/lab_03/lab3_merge_sort", "--threads", "4", "--input", "lab_03/data/numbers_10000.txt"], 0xfffff06d94d8 /* 65 vars */) = 0
+821490 openat(AT_FDCWD, "lab_03/data/numbers_10000.txt", O_RDONLY) = 3
+821490 read(3, "917515 -556988 -583845 -76703 86"..., 4096) = 4096
+821490 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xf7b137f1f588, parent_tid=0xf7b137f1f230, exit_signal=0, stack=0xf7b137710000, stack_size=0x80ea40, tls=0xf7b137f1f880} => {parent_tid=[821491]}, 88) = 821491
+821490 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+821490 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+821490 futex(0xf7b137f1f588, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 0
+821490 exit_group(0)                    = ?

@@ -1,0 +1,720 @@
+821490 execve("./build/lab_03/lab3_merge_sort", ["./build/lab_03/lab3_merge_sort", "--threads", "4", "--input", "lab_03/data/numbers_10000.txt"], 0xfffff06d94d8 /* 65 vars */) = 0
+821490 brk(NULL)                        = 0xac1bb3a13000
+821490 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf7b138139000
+821490 faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+821490 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+821490 fstat(3, {st_mode=S_IFREG|0644, st_size=63707, ...}) = 0
+821490 mmap(NULL, 63707, PROT_READ, MAP_PRIVATE, 3, 0) = 0xf7b1380f3000
+821490 close(3)                         = 0
+821490 openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+821490 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3101\2\0\0\0\0\0"..., 832) = 832
+821490 fstat(3, {st_mode=S_IFREG|0755, st_size=1788240, ...}) = 0
+821490 mmap(NULL, 1957440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xf7b137f15000
+821490 mmap(0xf7b137f20000, 1891904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xf7b137f20000
+821490 munmap(0xf7b137f15000, 45056)    = 0
+821490 munmap(0xf7b1380ee000, 20032)    = 0
+821490 mprotect(0xf7b1380c9000, 81920, PROT_NONE) = 0
+821490 mmap(0xf7b1380dd000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0xf7b1380dd000
+821490 mmap(0xf7b1380e2000, 48704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf7b1380e2000
+821490 mmap(0xf7b137f20000, 1740800, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xf7b137f20000
+821490 close(3)                         = 0
+821490 set_tid_address(0xf7b13813a388)  = 821490
+821490 set_robust_list(0xf7b13813a040, 24) = 0
+821490 rseq(0xf7b13813a740, 0x21, 0, 0xd428bc00) = 0
+821490 mprotect(0xf7b1380dd000, 12288, PROT_READ) = 0
+821490 mprotect(0xac1ba2c3f000, 4096, PROT_READ) = 0
+821490 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf7b138137000
+821490 mprotect(0xf7b138141000, 8192, PROT_READ) = 0
+821490 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+821490 getrandom("\x00\x14\xa7\xb5\x50\x90\xda\xbf", 8, GRND_NONBLOCK) = 8
+821490 munmap(0xf7b1380f3000, 63707)    = 0
+821490 brk(NULL)                        = 0xac1bb3a13000
+821490 brk(0xac1bb3c00000)              = 0xac1bb3c00000
+821490 openat(AT_FDCWD, "lab_03/data/numbers_10000.txt", O_RDONLY) = 3
+821490 fstat(3, {st_mode=S_IFREG|0664, st_size=73897, ...}) = 0
+821490 read(3, "917515 -556988 -583845 -76703 86"..., 4096) = 4096
+821490 read(3, "599981 -973607 -31067 -678001 15"..., 4096) = 4096
+821490 read(3, "1375 106861 602663 553477 -21513"..., 4096) = 4096
+821490 read(3, "13439 -671615 113915 -703041 -18"..., 4096) = 4096
+821490 read(3, "71045 113416 473928 756303 89554"..., 4096) = 4096
+821490 read(3, "77 -833436 14898 -264477 36934 -"..., 4096) = 4096
+821490 read(3, "7085 247737 472006 350946 -69389"..., 4096) = 4096
+821490 read(3, "8 985097 -784577 -807372\n577060 "..., 4096) = 4096
+821490 read(3, "734 -806398 -826714 722377 56378"..., 4096) = 4096
+821490 read(3, "78732 388250 579570 -343622 -563"..., 4096) = 4096
+821490 read(3, "594 832422 696725 -470075 -12793"..., 4096) = 4096
+821490 read(3, "90 851093 301195 948110 -440917\n"..., 4096) = 4096
+821490 read(3, "4451 -77667 962392 341788 668397"..., 4096) = 4096
+821490 read(3, "38958 670021 -940413 893018 -892"..., 4096) = 4096
+821490 read(3, "458 -146143 802998 333174 -22559"..., 4096) = 4096
+821490 read(3, "3 565939 -23104 853897 -251011 -"..., 4096) = 4096
+821490 read(3, " 827220 -616725 181430 771692 -7"..., 4096) = 4096
+821490 read(3, "5 -198430 43389 475568 613517 56"..., 4096) = 4096
+821490 read(3, " 668368 291123 -724895\n312195 36"..., 4096) = 169
+821490 read(3, "", 4096)                = 0
+821490 close(3)                         = 0
+821490 rt_sigaction(SIGRT_1, {sa_handler=0xf7b137fa93c0, sa_mask=[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+821490 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+821490 mmap(NULL, 8454144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xf7b137710000
+821490 madvise(0xf7b137710000, 65536, MADV_GUARD_INSTALL) = 0
+821490 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+821490 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xf7b137f1f588, parent_tid=0xf7b137f1f230, exit_signal=0, stack=0xf7b137710000, stack_size=0x80ea40, tls=0xf7b137f1f880} => {parent_tid=[821491]}, 88) = 821491
+821490 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+821490 mmap(NULL, 8454144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xf7b136f00000
+821490 madvise(0xf7b136f00000, 65536, MADV_GUARD_INSTALL) = 0
+821491 rseq(0xf7b137f1f940, 0x21, 0, 0xd428bc00 <unfinished ...>
+821490 rt_sigprocmask(SIG_BLOCK, ~[] <unfinished ...>
+821491 <... rseq resumed>)              = 0
+821490 <... rt_sigprocmask resumed>, [], 8) = 0
+821490 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xf7b13770f588, parent_tid=0xf7b13770f230, exit_signal=0, stack=0xf7b136f00000, stack_size=0x80ea40, tls=0xf7b13770f880} <unfinished ...>
+821491 set_robust_list(0xf7b137f1f240, 24 <unfinished ...>
+821490 <... clone3 resumed> => {parent_tid=[821492]}, 88) = 821492
+821491 <... set_robust_list resumed>)   = 0
+821490 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+821490 mmap(NULL, 8454144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+821491 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+821490 <... mmap resumed>)              = 0xf7b1366f0000
+821490 madvise(0xf7b1366f0000, 65536, MADV_GUARD_INSTALL) = 0
+821490 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+821490 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xf7b136eff588, parent_tid=0xf7b136eff230, exit_signal=0, stack=0xf7b1366f0000, stack_size=0x80ea40, tls=0xf7b136eff880} <unfinished ...>
+821491 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821490 <... clone3 resumed> => {parent_tid=[821493]}, 88) = 821493
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+821493 rseq(0xf7b136eff940, 0x21, 0, 0xd428bc00 <unfinished ...>
+821490 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821490 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... rseq resumed>)              = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 set_robust_list(0xf7b136eff240, 24 <unfinished ...>
+821492 rseq(0xf7b13770f940, 0x21, 0, 0xd428bc00 <unfinished ...>
+821491 <... futex resumed>)             = 0
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... set_robust_list resumed>)   = 0
+821492 <... rseq resumed>)              = 0
+821493 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+821492 set_robust_list(0xf7b13770f240, 24 <unfinished ...>
+821493 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821492 <... set_robust_list resumed>)   = 0
+821492 rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 3
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = 1
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821493 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 2
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 1
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 4, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 4, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 4, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 0
+821490 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 7, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 7, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821492 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 7, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 2
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 10, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 10, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 10, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821492 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 3
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = 0
+821490 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 13, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 13, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 13, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 2
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 16, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 16, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 16, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = 0
+821490 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 19, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 19, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 19, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 1
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 22, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 1
+821493 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 22, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 1
+821491 <... futex resumed>)             = 0
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 22, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 25, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 25, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 25, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 3
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 28, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821490 <... futex resumed>)             = 0
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 28, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 28, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 2
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 31, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 31, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 31, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = 1
+821491 <... futex resumed>)             = 0
+821490 <... futex resumed>)             = 1
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 34, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 34, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 34, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 2
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = 1
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 37, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 37, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 37, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 1
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 40, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 1
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 40, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 1
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 40, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... futex resumed>)             = 0
+821493 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 3
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 43, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 43, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 43, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 1
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = 1
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 46, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 1
+821493 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 46, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 46, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 49, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 49, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 49, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 1
+821490 <... futex resumed>)             = 1
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = 0
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 52, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 52, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 52, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1) = 0
+821490 <... futex resumed>)             = 0
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 55, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 55, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 55, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 1
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 58, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 58, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 58, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 61, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 61, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 61, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 64, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 64, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821492 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 64, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 2
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 67, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 67, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 67, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 <... futex resumed>)             = 1
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 1
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 70, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 70, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 70, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821491 <... futex resumed>)             = 0
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 73, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821490 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 73, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 futex(0xffffc605db2c, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 73, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821492 <... futex resumed>)             = 0
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605db2c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 2
+821491 <... futex resumed>)             = 0
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 <... futex resumed>)             = 1
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 76, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821490 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 76, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605db28, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 76, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821491 <... futex resumed>)             = 0
+821491 futex(0xffffc605db28, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 3
+821490 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+821490 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821493 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+821492 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821491 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821490 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821493 futex(0xffffc605dad8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+821492 <... futex resumed>)             = 0
+821491 <... futex resumed>)             = 0
+821492 rt_sigprocmask(SIG_BLOCK, ~[RT_1] <unfinished ...>
+821491 rt_sigprocmask(SIG_BLOCK, ~[RT_1] <unfinished ...>
+821490 <... futex resumed>)             = 0
+821493 <... futex resumed>)             = 0
+821492 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821490 futex(0xf7b137f1f588, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 1, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+821493 rt_sigprocmask(SIG_BLOCK, ~[RT_1] <unfinished ...>
+821491 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821493 <... rt_sigprocmask resumed>, NULL, 8) = 0
+821492 madvise(0xf7b136f00000, 8314880, MADV_DONTNEED <unfinished ...>
+821491 madvise(0xf7b137710000, 8314880, MADV_DONTNEED <unfinished ...>
+821493 madvise(0xf7b1366f0000, 8314880, MADV_DONTNEED <unfinished ...>
+821492 <... madvise resumed>)           = 0
+821491 <... madvise resumed>)           = 0
+821493 <... madvise resumed>)           = 0
+821493 exit(0 <unfinished ...>
+821492 exit(0 <unfinished ...>
+821491 exit(0 <unfinished ...>
+821493 <... exit resumed>)              = ?
+821492 <... exit resumed>)              = ?
+821491 <... exit resumed>)              = ?
+821490 <... futex resumed>)             = 0
+821493 +++ exited with 0 +++
+821492 +++ exited with 0 +++
+821491 +++ exited with 0 +++
+821490 write(2, "\320\222\321\200\320\265\320\274\321\217 \321\201\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\272\320\270:"..., 64) = 64
+821490 fstat(1, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+821490 ioctl(1, TCGETS2, 0xffffc605d738) = -1 ENOTTY (Inappropriate ioctl for device)
+821490 write(1, "-999979 -999930 -999912 -999749 "..., 4096) = 4096
+821490 write(1, "-907724 -907693 -907650 -907511 "..., 4096) = 4096
+821490 write(1, "-811279 -811209 -811147 -811127 "..., 4096) = 4096
+821490 write(1, "-709426 -709338 -709219 -709192 "..., 4096) = 4096
+821490 write(1, "-607623 -607510 -607490 -607117 "..., 4096) = 4096
+821490 write(1, "-501539 -501534 -501359 -501353 "..., 4096) = 4096
+821490 write(1, "-398612 -398512 -398485 -398293 "..., 4096) = 4096
+821490 write(1, "-290357 -290310 -290274 -290035 "..., 4096) = 4096
+821490 write(1, "-185627 -185547 -185311 -185216 "..., 4096) = 4096
+821490 write(1, "3 -78557 -78497 -78447 -78438 -7"..., 4096) = 4096
+821490 write(1, "46036 46256 46362 46531 46796 46"..., 4096) = 4096
+821490 write(1, " 165610 166079 166331 166494 166"..., 4096) = 4096
+821490 write(1, "281605 281770 281803 281859 2819"..., 4096) = 4096
+821490 write(1, "00715 400825 400922 401104 40199"..., 4096) = 4096
+821490 write(1, "6321 526504 526677 527121 527138"..., 4096) = 4096
+821490 write(1, "176 642887 642980 643066 643173 "..., 4096) = 4096
+821490 write(1, "62 755410 755941 756025 756036 7"..., 4096) = 4096
+821490 write(1, "4 870205 870621 870668 870799 87"..., 4096) = 4096
+821490 write(1, " 995102 995247 995576 995714 995"..., 170) = 170
+821490 exit_group(0)                    = ?
+821490 +++ exited with 0 +++
