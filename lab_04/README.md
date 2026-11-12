@@ -48,4 +48,11 @@ cd build/lab_04
 
 ## Отчёт
 
-Каталог `report/` пока оставлен пустым.
+Исходник отчёта находится в `report/report.tex`, готовый PDF — в `report/report.pdf`.
+
+Для сборки нужен `pdflatex` или `tectonic`:
+
+```bash
+cd lab_04/report
+make
+```

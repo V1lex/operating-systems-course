@@ -1,0 +1,185 @@
+5028  execve("./lab4_parent", ["./lab4_parent"], 0xffffdd4774a8 /* 65 vars */) = 0
+5028  brk(NULL)                         = 0xb4f930cef000
+5028  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfde6c82ae000
+5028  faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+5028  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+5028  fstat(3, {st_mode=S_IFREG|0644, st_size=63707, ...}) = 0
+5028  mmap(NULL, 63707, PROT_READ, MAP_PRIVATE, 3, 0) = 0xfde6c8268000
+5028  close(3)                          = 0
+5028  openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+5028  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3101\2\0\0\0\0\0"..., 832) = 832
+5028  fstat(3, {st_mode=S_IFREG|0755, st_size=1788240, ...}) = 0
+5028  mmap(NULL, 1957440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xfde6c808a000
+5028  mmap(0xfde6c8090000, 1891904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xfde6c8090000
+5028  munmap(0xfde6c808a000, 24576)     = 0
+5028  munmap(0xfde6c825e000, 40512)     = 0
+5028  mprotect(0xfde6c8239000, 81920, PROT_NONE) = 0
+5028  mmap(0xfde6c824d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0xfde6c824d000
+5028  mmap(0xfde6c8252000, 48704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xfde6c8252000
+5028  mmap(0xfde6c8090000, 1740800, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xfde6c8090000
+5028  close(3)                          = 0
+5028  set_tid_address(0xfde6c82af388)   = 5028
+5028  set_robust_list(0xfde6c82af040, 24) = 0
+5028  rseq(0xfde6c82af740, 0x21, 0, 0xd428bc00) = 0
+5028  mprotect(0xfde6c824d000, 12288, PROT_READ) = 0
+5028  mprotect(0xb4f908ecf000, 4096, PROT_READ) = 0
+5028  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfde6c82ac000
+5028  mprotect(0xfde6c82b6000, 8192, PROT_READ) = 0
+5028  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+5028  getrandom("\xe8\xd7\x90\x09\xb3\xc4\x03\x06", 8, GRND_NONBLOCK) = 8
+5028  munmap(0xfde6c8268000, 63707)     = 0
+5028  rt_sigaction(SIGUSR1, {sa_handler=0xb4f908eb1128, sa_mask=[], sa_flags=SA_NOCLDSTOP}, NULL, 8) = 0
+5028  rt_sigaction(SIGCHLD, {sa_handler=0xb4f908eb1128, sa_mask=[], sa_flags=SA_NOCLDSTOP}, NULL, 8) = 0
+5028  rt_sigprocmask(SIG_BLOCK, [USR1 CHLD], [], 8) = 0
+5028  fstat(1, {st_mode=S_IFCHR|0600, st_rdev=makedev(0x88, 0), ...}) = 0
+5028  brk(NULL)                         = 0xb4f930cef000
+5028  brk(0xb4f930e00000)               = 0xb4f930e00000
+5028  write(1, "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\277\321\203\321\202\321\214 \320\272 \321\204\320\260\320"..., 39) = 39
+5028  fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+5028  read(0, "../../lab_04/data/ok.txt\n", 4096) = 25
+5028  openat(AT_FDCWD, "../../lab_04/data/ok.txt", O_RDONLY) = 3
+5028  rt_sigprocmask(SIG_BLOCK, ~[], [USR1 CHLD], 8) = 0
+5028  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_DROPPABLE|MAP_ANONYMOUS, -1, 0) = 0xfde6c82ab000
+5028  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfde6c82aa000
+5028  rt_sigprocmask(SIG_SETMASK, [USR1 CHLD], NULL, 8) = 0
+5028  getrandom("\xfb\x6d\xae\x9b\x2c\x60\x32\xc6\x15\x63\xbf\xd7\xce\xb0\x33\x50\x20\x57\xe7\xcd\xa7\x29\xe8\xa8\xca\x2b\x34\xf1\xc8\x54\xb2\x83", 32, 0) = 32
+5028  openat(AT_FDCWD, "/tmp/lab4-SjREMh", O_RDWR|O_CREAT|O_EXCL, 0600) = 4
+5028  unlinkat(AT_FDCWD, "/tmp/lab4-SjREMh", 0) = 0
+5028  ftruncate(4, 4)                   = 0
+5028  mmap(NULL, 4, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0xfde6c82a9000
+5028  rt_sigprocmask(SIG_BLOCK, ~[], [USR1 CHLD], 8) = 0
+5028  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xfde6c82af030) = 5029
+5029  set_robust_list(0xfde6c82af040, 24 <unfinished ...>
+5028  rt_sigprocmask(SIG_SETMASK, [USR1 CHLD] <unfinished ...>
+5029  <... set_robust_list resumed>)    = 0
+5028  <... rt_sigprocmask resumed>, NULL, 8) = 0
+5029  rt_sigprocmask(SIG_SETMASK, [USR1 CHLD] <unfinished ...>
+5028  close(3)                          = 0
+5028  close(4 <unfinished ...>
+5029  <... rt_sigprocmask resumed>, NULL, 8) = 0
+5028  <... close resumed>)              = 0
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  dup3(3, 0, 0)                     = 0
+5029  close(3)                          = 0
+5029  execve("./lab4_child", ["lab4_child", "4"], 0xfffff2df75a8 /* 65 vars */) = 0
+5029  brk(NULL)                         = 0xc01ede8bb000
+5029  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfd700527b000
+5029  faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+5029  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+5029  fstat(3, {st_mode=S_IFREG|0644, st_size=63707, ...}) = 0
+5029  mmap(NULL, 63707, PROT_READ, MAP_PRIVATE, 3, 0) = 0xfd7005235000
+5029  close(3)                          = 0
+5029  openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+5029  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\3101\2\0\0\0\0\0"..., 832) = 832
+5029  fstat(3, {st_mode=S_IFREG|0755, st_size=1788240, ...}) = 0
+5029  mmap(NULL, 1957440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xfd7005057000
+5029  mmap(0xfd7005060000, 1891904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xfd7005060000
+5029  munmap(0xfd7005057000, 36864)     = 0
+5029  munmap(0xfd700522e000, 28224)     = 0
+5029  mprotect(0xfd7005209000, 81920, PROT_NONE) = 0
+5029  mmap(0xfd700521d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ad000) = 0xfd700521d000
+5029  mmap(0xfd7005222000, 48704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xfd7005222000
+5029  mmap(0xfd7005060000, 1740800, PROT_READ|PROT_EXEC|0x10, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xfd7005060000
+5029  close(3)                          = 0
+5029  set_tid_address(0xfd700527c388)   = 5029
+5029  set_robust_list(0xfd700527c040, 24) = 0
+5029  rseq(0xfd700527c740, 0x21, 0, 0xd428bc00) = 0
+5029  mprotect(0xfd700521d000, 12288, PROT_READ) = 0
+5029  mprotect(0xc01ed355f000, 4096, PROT_READ) = 0
+5029  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xfd7005279000
+5029  mprotect(0xfd7005283000, 8192, PROT_READ) = 0
+5029  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+5029  getrandom("\xa0\xa1\x92\xb7\x50\x5c\xd4\xd2", 8, GRND_NONBLOCK) = 8
+5029  munmap(0xfd7005235000, 63707)     = 0
+5029  getppid()                         = 5028
+5029  rt_sigprocmask(SIG_BLOCK, [USR2], NULL, 8) = 0
+5029  mmap(NULL, 4, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0xfd7005278000
+5029  close(4)                          = 0
+5029  brk(NULL)                         = 0xc01ede8bb000
+5029  brk(0xc01edea00000)               = 0xc01edea00000
+5029  fstat(0, {st_mode=S_IFREG|0664, st_size=64, ...}) = 0
+5029  read(0, "32 2 2 2 2 2 2\n100 5\n10\n1000 0.0"..., 4096) = 64
+5029  kill(5028, SIGUSR1 <unfinished ...>
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5029  <... kill resumed>)               = 0
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5028  rt_sigreturn({mask=[USR1 CHLD]} <unfinished ...>
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  <... rt_sigreturn resumed>)       = -1 EINTR (Interrupted system call)
+5028  write(1, "0.5\n", 4)              = 4
+5028  kill(5029, SIGUSR2)               = 0
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5029  kill(5028, SIGUSR1 <unfinished ...>
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  <... kill resumed>)               = 0
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5028  rt_sigreturn({mask=[USR1 CHLD]})  = -1 EINTR (Interrupted system call)
+5028  write(1, "20\n", 3)               = 3
+5028  kill(5029, SIGUSR2)               = 0
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  kill(5028, SIGUSR1 <unfinished ...>
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5029  <... kill resumed>)               = 0
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5028  rt_sigreturn({mask=[USR1 CHLD]} <unfinished ...>
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  <... rt_sigreturn resumed>)       = -1 EINTR (Interrupted system call)
+5028  write(1, "10\n", 3)               = 3
+5028  kill(5029, SIGUSR2)               = 0
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  kill(5028, SIGUSR1)               = 0
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  rt_sigreturn({mask=[USR1 CHLD]})  = -1 EINTR (Interrupted system call)
+5028  write(1, "100000\n", 7)           = 7
+5028  kill(5029, SIGUSR2)               = 0
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5029  kill(5028, SIGUSR1 <unfinished ...>
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5029  <... kill resumed>)               = 0
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5028  rt_sigreturn({mask=[USR1 CHLD]} <unfinished ...>
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  <... rt_sigreturn resumed>)       = -1 EINTR (Interrupted system call)
+5028  write(1, "500\n", 4)              = 4
+5028  kill(5029, SIGUSR2)               = 0
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  kill(5028, SIGUSR1 <unfinished ...>
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5029  <... kill resumed>)               = 0
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  rt_sigreturn({mask=[USR1 CHLD]})  = -1 EINTR (Interrupted system call)
+5028  write(1, "0.05\n", 5)             = 5
+5028  kill(5029, SIGUSR2)               = 0
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  read(0, "", 4096)                 = 0
+5029  kill(5028, SIGUSR1 <unfinished ...>
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5029  <... kill resumed>)               = 0
+5028  --- SIGUSR1 {si_signo=SIGUSR1, si_code=SI_USER, si_pid=5029, si_uid=1000} ---
+5028  rt_sigreturn({mask=[USR1 CHLD]} <unfinished ...>
+5029  rt_sigtimedwait([USR2] <unfinished ...>
+5028  <... rt_sigreturn resumed>)       = -1 EINTR (Interrupted system call)
+5028  write(1, "0\n", 2)                = 2
+5028  kill(5029, SIGUSR2)               = 0
+5029  <... rt_sigtimedwait resumed>, {si_signo=SIGUSR2, si_code=SI_USER, si_pid=5028, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+5029  munmap(0xfd7005278000, 4)         = 0
+5028  rt_sigsuspend([], 8 <unfinished ...>
+5029  exit_group(0)                     = ?
+5029  +++ exited with 0 +++
+5028  <... rt_sigsuspend resumed>)      = ? ERESTARTNOHAND (To be restarted if no handler)
+5028  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=5029, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+5028  rt_sigreturn({mask=[USR1 CHLD]})  = -1 EINTR (Interrupted system call)
+5028  wait4(5029, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 5029
+5028  munmap(0xfde6c82a9000, 4)         = 0
+5028  exit_group(0)                     = ?
+5028  +++ exited with 0 +++
